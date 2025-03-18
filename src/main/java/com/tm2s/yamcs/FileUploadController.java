@@ -36,7 +36,7 @@ public class FileUploadController {
         }
 
         String yamcsInstance = "cfdp0";
-        String url = "http://localhost:8090/api/cfdp/" + yamcsInstance + "/transfers";
+        String url = "http://localhost:8090/api/filetransfer/cfdp/" + yamcsInstance + "/transfers";
         logger.debug("Preparing payload for Yamcs CFDP API: " + url);
         Map<String, Object> payload = new HashMap<>();
         payload.put("direction", "UPLOAD");
